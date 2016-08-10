@@ -1,0 +1,28 @@
+_welcome:
+    pattern:  /
+    defaults: { _controller: AcmeDemoBundle:Welcome:index }
+    
+_other_welcome:
+    pattern:  /accueil
+    defaults: { _controller: AcmeDemoBundle:Welcome:accueil }
+
+_demo_secured:
+    resource: "@AcmeDemoBundle/Controller/SecuredController.php"
+    type:     annotation
+
+_demo:
+    resource: "@AcmeDemoBundle/Controller/DemoController.php"
+    type:     annotation
+    prefix:   /demo
+    
+_contact_us:
+    pattern:  /contact
+    defaults: { _controller: AcmeDemoBundle:Contactus:contactus }
+    
+_etude_signature_professionnelle:
+    pattern:  /signature-professionnelle
+    defaults: { _controller: AcmeDemoBundle:Etude:signatureProfessionnelle }
+    
+_etude_hussier_mbeleck:
+    pattern:  /hussier-mbeleck
+    defaults: { _controller: AcmeDemoBundle:Etude:hussierMbelleck }

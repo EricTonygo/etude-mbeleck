@@ -1,0 +1,50 @@
+{% extends "::base.html.twig" %}
+
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- core CSS -->
+    {% block stylesheets %}
+        <link href="{{ asset('bundles/acmedemo/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/acmedemo/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/acmedemo/css/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/acmedemo/css/prettyPhoto.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/acmedemo/css/main.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/acmedemo/css/responsive.cs') }}s" rel="stylesheet">
+    {% endblock %}
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('bundles/acmedemo/images/ico/apple-touch-icon-144-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('bundles/acmedemo/images/ico/apple-touch-icon-114-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('bundles/acmedemo/images/ico/apple-touch-icon-72-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('bundles/acmedemo/images/ico/apple-touch-icon-57-precomposed.png') }}">
+
+{% endblock %}
+
+
+{% block body %}
+    {% block content_header %}
+        {% include('AcmeDemoBundle::header.html.twig') %}
+    {% endblock %}
+
+{% block content %}{% endblock %}
+
+
+{% block footer %}
+    {% include('AcmeDemoBundle::footer.html.twig') %}
+{% endblock %}
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('bundles/acmedemo/js/jquery.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jquery.prettyPhoto.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jquery.isotope.min.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/main.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/wow.min.js') }}"></script>
+{% endblock %}
