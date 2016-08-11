@@ -11,7 +11,6 @@ class EtudeController extends Controller{
     /**
      * @Route("/signature-professionnelle")
      * @Template()
-     * @param Request $request
      */
     public function signatureProfessionnelleAction() {
         // Si le visiteur est déjà identifié, on le redirige vers l'accueil
@@ -22,7 +21,6 @@ class EtudeController extends Controller{
     /**
      * @Route("/hussier-mbeleck")
      * @Template()
-     * @param Request $request
      */
     public function hussierMbeleckAction() {
         // Si le visiteur est déjà identifié, on le redirige vers l'accueil

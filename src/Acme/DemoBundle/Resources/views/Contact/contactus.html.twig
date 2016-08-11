@@ -1,12 +1,12 @@
 {% extends 'AcmeDemoBundle::layout.html.twig' %}
 
 {% block title %}H.B - Notre contact{% endblock %}
-
+{% block menuContact %}active{% endblock %}
 {% block content %}
     <section id="contact-info">
         <div class="center">                
             <h2>Comment Nous Retrouver?</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            {#<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>#}
         </div>
         <div class="gmap-area">
             <div class="container">
@@ -36,25 +36,6 @@
                                     Email Address:info@domain.com</p>
                                 </address>
                             </li>
-
-
-                            <li class="col-sm-6">
-                                <address>
-                                    <h5>Zone#2 Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-
-                                <address>
-                                    <h5>Zone#3 Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +47,7 @@
         <div class="container">
             <div class="center">        
                 <h2>Redigez Votre Message</h2>
-                <p class="lead">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                {#<p class="lead">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>#}
             </div> 
             <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>

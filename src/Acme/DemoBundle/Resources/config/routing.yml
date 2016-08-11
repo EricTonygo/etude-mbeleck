@@ -25,4 +25,37 @@ _etude_signature_professionnelle:
     
 _etude_hussier_mbeleck:
     pattern:  /hussier-mbeleck
-    defaults: { _controller: AcmeDemoBundle:Etude:hussierMbelleck }
+    defaults: { _controller: AcmeDemoBundle:Etude:hussierMbeleck }
+    
+    
+_di_signification_recouvrement:
+    pattern:  /signification-recouvrement-judiciaire
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:significationRecouvrement }
+    
+_di_constats:
+    pattern:  /constats
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:constats }
+    
+_di_recouvrement_aimable:
+    pattern:  /recouvrement-amiable-creances
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:recouvrementAmiable }
+    
+_di_mediation:
+    pattern:  /mediation
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:mediation }
+    
+_di_ventes_encheres:
+    pattern:  /ventes-encheres
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:ventesEncheres }
+    
+_di_jeux_concours:
+    pattern:  /jeux-concours
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:jeuxConcours }
+    
+_di_conseil:
+    pattern:  /conseil
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:conseil }
+    
+_di_administration_biens:
+    pattern:  /administration-biens
+    defaults: { _controller: AcmeDemoBundle:DomaineIntervention:administrationBiens }

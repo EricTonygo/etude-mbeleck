@@ -34,4 +34,11 @@ class ContactusController extends Controller{
         
         return $this->render('AcmeDemoBundle:Contact:contactus.html.twig', array('form' => $form->createView()));
     }
+    
+    public function showFormFooterAction()
+    {
+        $contact = new Contact();
+        $form = $this->createForm(new ContactType(), $contact);
+        return $this->render('AcmeDemoBundle::form-footer.html.twig', array('form' => $form->createView()));
+    }
 }

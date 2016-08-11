@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-4">
-                    <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
+                    <div class="top-number"><p><i class="fa fa-phone-square"></i>  +237 696 27 63 26</p></div>
                 </div>
                 <div class="col-sm-6 col-xs-8">
                     <div class="social">
@@ -43,29 +43,29 @@
 
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ path('_other_welcome')}}">Accueil</a></li>
-                    <li class="dropdown">
+                    <li class="{% block menuAccueil %}{% endblock %}"><a href="{{ path('_other_welcome')}}">Accueil</a></li>
+                    <li class="dropdown {% block menuEtude %}{% endblock %}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notre Etude <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog-item.html">Signature professionnelle</a></li>
-                            <li><a href="pricing.html">Maître Mbeleck</a></li>
+                            <li><a href="{{ path('_etude_signature_professionnelle')}}">Signature professionnelle</a></li>
+                            <li><a href="{{ path('_etude_hussier_mbeleck')}}">Maître Mbeleck</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown {% block menuDomaineIntervention %}{% endblock %}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Domaines d'intervention <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog-item.html">Constats</a></li>
-                            <li><a href="pricing.html">Signification et <br />recouvrement judiciaire</a></li>
-                            <li><a href="404.html">Recouvrement <br />amiable de créances</a></li>
-                            <li><a href="shortcodes.html">Médiation</a></li>
-                            <li><a href="blog-item.html">Ventes aux enchères</a></li>
-                            <li><a href="pricing.html">Jeux – Concours</a></li>
-                            <li><a href="404.html">Conseil</a></li>
-                            <li><a href="shortcodes.html">Administration de biens</a></li>
+                            <li><a href="{{ path('_di_constats')}}">Constats</a></li>
+                            <li><a href="{{ path('_di_signification_recouvrement')}}">Signification et <br />recouvrement judiciaire</a></li>
+                            <li><a href="{{ path('_di_recouvrement_aimable')}}">Recouvrement <br />amiable de créances</a></li>
+                            <li><a href="{{ path('_di_mediation')}}">Médiation</a></li>
+                            <li><a href="{{ path('_di_ventes_encheres')}}">Ventes aux enchères</a></li>
+                            <li><a href="{{ path('_di_jeux_concours')}}">Jeux – Concours</a></li>
+                            <li><a href="{{ path('_di_conseil')}}">Conseil</a></li>
+                            <li><a href="{{ path('_di_administration_biens')}}">Administration de biens</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Paiement en ligne</a></li> 
-                    <li><a href="{{ path('_contact_us')}}">Contact</a></li>                        
+                    <li class="{% block menuConsultation %}{% endblock %}"><a href="{{ path('_other_welcome')}}">Consultation en ligne</a></li> 
+                    <li class="{% block menuContact %}{% endblock %}"><a href="{{ path('_contact_us')}}">Contact</a></li>                        
                 </ul>
             </div>
         </div><!--/.container-->

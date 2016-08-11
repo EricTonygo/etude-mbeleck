@@ -37,4 +37,5 @@ class WelcomeController extends Controller
          */
         return $this->render('AcmeDemoBundle:Welcome:index.html.twig');
     }
+    
 }
