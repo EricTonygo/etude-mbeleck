@@ -374,7 +374,7 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .carousel-content {
-  margin-top: 0px;
+  margin-top: 50px;
   margin-left: 10%;
 }
 
@@ -391,7 +391,7 @@ input.search-form:hover {
   background: #DAA536;
   color: #fff;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: 25px;
   display: inline-block;
 }
 
@@ -412,7 +412,7 @@ input.search-form:hover {
   width: 90%;
   margin-left: 5%;
   display: block !important;
-  height: 550px;
+  height: 470px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -420,7 +420,7 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .item:first-child {
-  top: 138px;
+  top: auto;
   position: relative;
 }
 
@@ -436,7 +436,7 @@ input.search-form:hover {
 #main-slider .prev,
 #main-slider .next {
   position: absolute;
-  top: 54%;
+  top: 45%;
   background-color: #DAA536;
   color: #fff;
   display: inline-block;
@@ -539,7 +539,6 @@ input.search-form:hover {
 #feature {
   background: #FFFFFF;
   padding-bottom: 40px;
-  padding-left: 30px;
 }
 
 .features{
