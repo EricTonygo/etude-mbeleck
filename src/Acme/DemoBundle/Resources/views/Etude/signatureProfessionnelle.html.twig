@@ -4,5 +4,48 @@
 
 {% block menuEtude %}active{% endblock %}
 {% block content %}
-    Signature professionnelle
+	<section id="blog" class="container">
+        <div id="title_page" class="center" >
+            <h2>Signature professionnelle</h2>
+			<p class="lead"></p>
+        </div>
+        <div class="blog">
+            <div class="row">
+                 <div class="col-md-8">
+                    <div class="blog-item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-11 blog-content">
+                                <a href="#"><img class="img-responsive img-blog" src="images/blog/blog1.jpg" width="100%" alt="" /></a>
+                                <h2><a href="blog-item.html">Consequat bibendum quam liquam viverra</a></h2>
+                                <h3>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.</h3>
+                            </div>
+                        </div>    
+                    </div><!--/.blog-item-->
+                </div><!--/.col-md-8-->
+
+                <aside class="col-md-4">
+					<div class="">
+                        <h3>Nôtre Etude</h3>
+                        <ul>
+                            <li><a href="{{ path('_etude_signature_professionnelle')}}">Signature professionnelle</a></li>
+                            <li><a href="{{ path('_etude_hussier_mbeleck')}}">Maître Mbeleck</a></li>
+                        </ul>
+                    </div>   
+                    <div class="">
+                        <h3>Domaines d'intervention</h3>
+                        <ul>
+                            <li><a href="{{ path('_di_constats')}}">Constats</a></li>
+                            <li><a href="{{ path('_di_signification_recouvrement')}}">Signification et recouvrement <br />judiciaire</a></li>
+                            <li><a href="{{ path('_di_recouvrement_aimable')}}">Recouvrement amiable <br />de créances</a></li>
+                            <li><a href="{{ path('_di_mediation')}}">Médiation</a></li>
+                            <li><a href="{{ path('_di_ventes_encheres')}}">Ventes aux enchères</a></li>
+                            <li><a href="{{ path('_di_jeux_concours')}}">Jeux – Concours</a></li>
+                            <li><a href="{{ path('_di_conseil')}}">Conseil</a></li>
+                            <li><a href="{{ path('_di_administration_biens')}}">Administration de biens</a></li>
+                        </ul>
+                    </div>   
+    			</aside>  
+            </div><!--/.row-->
+        </div>
+    </section><!--/#blog-->
 {% endblock %}

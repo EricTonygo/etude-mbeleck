@@ -115,7 +115,17 @@ a:focus {
 }
 
 body > section {
-  padding: 70px 0;
+  padding-top: 150px;
+  padding-bottom: 29px;
+}
+
+#feature {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+#bottom {
+  padding: 15px 0;
 }
 
 .center {
@@ -224,7 +234,7 @@ ul.social-share li a {
 }
 
 ul.social-share li a:hover {
-  background: #c52d2f;
+  background: #daa536;
   color: #fff;
 }
 
@@ -286,6 +296,16 @@ input.search-form:hover {
   color: #fff;
   line-height: 24px;
   display: inline-block;
+}
+
+aside {
+    box-shadow: 0px 0px 11px rgb(37, 51, 84);
+    background-color: #fff;
+	padding-right:0px;
+}
+
+#title_page{
+	padding-bottom:20px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
@@ -1898,6 +1918,14 @@ ul.social_icons li  a i{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 0;
+}
+
+.gmap-area2 {
+  background-image: url("../images/map.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
 }
 
 .gmap-area .gmap iframe {
